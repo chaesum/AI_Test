@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#dbe1ff","border-subtle":"rgba(255, 255, 255, 0.08)","secondary-fixed-dim":"#d0bcff","outline":"#8d90a0","tertiary":"#4cd7f6","surface-base":"#0B0F19","tertiary-fixed-dim":"#4cd7f6","on-secondary-fixed":"#23005c","surface":"#0b1326","text-secondary":"#94A3B8","tertiary-fixed":"#acedff","on-primary-container":"#eeefff","on-secondary":"#3c0091","on-error":"#690005","inverse-on-surface":"#283044","inverse-surface":"#dae2fd","surface-container-low":"#131b2e","surface-container":"#171f33","surface-bright":"#31394d","background":"#0b1326","outline-variant":"#434655","on-surface-variant":"#c3c6d7","secondary-container":"#571bc1","tertiary-container":"#00788c","surface-elevated":"#1E293B","secondary-fixed":"#e9ddff","on-tertiary":"#003640","on-background":"#dae2fd","surface-container-high":"#222a3d","on-secondary-fixed-variant":"#5516be","error":"#ffb4ab","text-muted":"#64748B","surface-card":"#111827","on-primary-fixed":"#00174b","primary-container":"#2563eb","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#d7f6ff","on-error-container":"#ffdad6","surface-container-lowest":"#060e20","surface-container-highest":"#2d3449","accent-electric-glow":"rgba(37, 99, 235, 0.25)","on-secondary-container":"#c4abff","on-primary-fixed-variant":"#003ea8","surface-tint":"#b4c5ff","secondary":"#d0bcff","on-surface":"#dae2fd","text-primary":"#F8FAFC","error-container":"#93000a","inverse-primary":"#0053db","on-primary":"#002a78","on-tertiary-fixed-variant":"#004e5c","on-tertiary-fixed":"#001f26","surface-dim":"#0b1326","surface-variant":"#2d3449","border-focus":"#3B82F6","primary":"#b4c5ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"2rem","space-3xl":"6rem","space-md":"1rem","margin-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-2xl":"4rem","space-lg":"1.5rem","space-xl":"2.5rem",gutter:"1.5rem","margin-desktop":"4rem"},fontFamily:{"body-md":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"headline-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],display:["Inter"],"headline-lg":["Inter"],"display-mobile":["Inter"]},fontSize:{"body-md":["1rem",{lineHeight:"1.6rem",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"500"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.4rem",letterSpacing:"0em",fontWeight:"400"}],display:["3.5rem",{lineHeight:"4rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"700"}],"display-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[24px]">neurology</span><a class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold hover:text-primary transition-colors" href="#hero">AI Engineer Portfolio</a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="portfolio-overview" href="#hero">Hero</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="portfolio-overview" href="#about">About Me</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="portfolio-overview" href="#skills">Skills</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="portfolio-overview" href="#projects">Projects</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="portfolio-overview" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md bg-primary-container text-on-primary-container px-space-md py-space-xs rounded-lg hover:bg-inverse-primary hover:text-text-primary transition-all shadow-[0_0_16px_rgba(37,99,235,0.4)]" href="#contact">Get in Touch</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-space-3xl px-6 lg:px-12 flex flex-col items-center justify-center" id="hero">
+<!-- Ambient glowing backdrop effect -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/2 -right-36 w-[420px] h-[420px] bg-secondary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Column: Typographic Value Proposition -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide uppercase">AI Service & MLOps Engineer</span>
+<span class="text-outline text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Open to Opportunities</span>
+</div>
+<!-- Main Headline -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">Bridging Models to Production</span>
+<h1 class="font-display text-display text-text-primary tracking-tight font-extrabold max-w-2xl">
+            AI 기술로 일상의 문제를 해결하는 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">AI 서비스 엔지니어</span>
+</h1>
+</div>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl">
+          LLM, 머신러닝, 생성형 AI 애플리케이션 개발부터 분산 서빙 인프라 및 프로덕션 서비스 구현까지—가설 검증에 멈추지 않고 실사용자 경험과 비즈니스 임팩트를 창출합니다.
+        </p>
+<!-- Tech Badges Cloud -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-primary font-label-sm text-label-sm shadow-sm">LLMOps</span>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-text-secondary font-label-sm text-label-sm">Agentic AI</span>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-tertiary font-label-sm text-label-sm shadow-sm">Enterprise RAG</span>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-text-secondary font-label-sm text-label-sm">PyTorch</span>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-text-secondary font-label-sm text-label-sm">FastAPI</span>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-primary-fixed-dim font-label-sm text-label-sm">Triton Inference</span>
+</div>
+<!-- Hero Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-inverse-primary transition-all shadow-[0_0_24px_rgba(37,99,235,0.4)] transform hover:-translate-y-0.5" href="#projects">
+<span>프로젝트 살펴보기</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-surface-elevated text-text-primary font-label-md text-label-md hover:bg-surface-bright transition-all shadow-sm" href="#about">
+<span>About Me 둘러보기</span>
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Neural Serving Telemetry Display -->
+<div class="lg:col-span-5 relative w-full">
+<!-- Floating Backdrop Card -->
+<div class="w-full bg-surface-card/90 backdrop-blur-xl rounded-xl p-space-lg flex flex-col gap-space-md shadow-2xl relative">
+<!-- Terminal Header -->
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low/50 px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="ml-space-xs font-label-sm text-label-sm text-text-muted">inference-cluster::prod-ap-northeast-2</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> Live 99.98%
+            </span>
+</div>
+<!-- Neural Network Visual Vector Map -->
+<div class="relative w-full h-48 bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center p-space-md">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 380 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.35" stroke-width="1.5" x1="30" x2="120" y1="80" y2="35"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.35" stroke-width="1.5" x1="30" x2="120" y1="80" y2="125"></line>
+<line stroke="currentColor" stroke-opacity="0.5" stroke-width="2" x1="120" x2="220" y1="35" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.5" stroke-width="2" x1="120" x2="220" y1="125" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.8" stroke-width="2.5" x1="220" x2="330" y1="80" y2="45"></line>
+<line stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5" x1="220" x2="330" y1="80" y2="115"></line>
+<!-- Nodes -->
+<circle cx="30" cy="80" fill="#171f33" r="14" stroke="#b4c5ff" stroke-width="2"></circle>
+<text fill="#dae2fd" font-size="8" font-weight="600" text-anchor="middle" x="30" y="84">INPUT</text>
+<circle cx="120" cy="35" fill="#1E293B" r="16" stroke="#4cd7f6" stroke-width="2"></circle>
+<text fill="#4cd7f6" font-size="7" text-anchor="middle" x="120" y="38">TOKENIZE</text>
+<circle cx="120" cy="125" fill="#1E293B" r="16" stroke="#d0bcff" stroke-width="2"></circle>
+<text fill="#d0bcff" font-size="7" text-anchor="middle" x="120" y="128">EMBED</text>
+<!-- Central Core Node -->
+<circle cx="220" cy="80" fill="#2563eb" fill-opacity="0.25" r="26" stroke="#2563eb" stroke-width="3"></circle>
+<circle cx="220" cy="80" fill="#b4c5ff" r="12"></circle>
+<text fill="#eeefff" font-size="8" font-weight="700" text-anchor="middle" x="220" y="118">RAG ROUTER</text>
+<circle cx="330" cy="45" fill="#1E293B" r="16" stroke="#4cd7f6" stroke-width="2"></circle>
+<text fill="#acedff" font-size="7" text-anchor="middle" x="330" y="48">LLM SERVE</text>
+<circle cx="330" cy="115" fill="#171f33" r="16" stroke="#8d90a0" stroke-width="2"></circle>
+<text fill="#c3c6d7" font-size="7" text-anchor="middle" x="330" y="118">STREAM</text>
+</svg>
+<div class="absolute bottom-2 left-3 font-label-sm text-label-sm text-text-muted">Pipeline latency: 28.4ms (p99)</div>
+</div>
+<!-- Micro Telemetry Grid -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Throughput</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">1,840 <span class="text-[12px] font-normal text-text-secondary">tps</span></span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">GPU Memory</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">64.2%</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Cache Hit</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">94.7%</span>
+</div>
+</div>
+<!-- Real-time Serviced Log Mockup -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg font-mono text-[11px] text-text-secondary flex flex-col gap-1 overflow-hidden">
+<div class="text-tertiary flex items-center justify-between">
+<span>[POST] /v1/chat/agentic-stream</span>
+<span class="text-text-muted">200 OK (112ms)</span>
+</div>
+<div class="text-on-surface-variant truncate">payload: {"intent": "enterprise_qa", "citations": true, "safety_pass": true}</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT ME SECTION -->
+<section class="w-full bg-surface-container-low py-space-3xl px-6 lg:px-12 relative" id="about">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">About Me</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold">
+          기술과 비즈니스의 가교 역할을 하는 AI 엔지니어
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-3xl">
+          단순히 모델 벤치마크 점수를 높이는 것에 머무르지 않고, 실제 고객의 서비스 병목을 해결하고 프로덕션 수준의 안정성과 비용 효율성을 달성하는 AI 아키텍처를 지향합니다.
+        </p>
+</div>
+<!-- Content Split: Engineering Philosophy & 3 Key Value Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
+<!-- Left Philosophy Card -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl p-space-xl flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary font-bold">
+              "실험실(Lab)의 모델을 실서비스(Product)의 가치로 전환합니다"
+            </h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              인공지능 모델의 가능성은 실제 사용자 인터페이스와 결합하여 대규모 트래픽 속에서도 지연 없이 안정적으로 작동할 때 비로소 진정한 비즈니스 자산이 됩니다.
+            </p>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              저는 불명확한 도메인 요구사항 속에서 최적의 프롬프트, 경량화 모델, 벡터 인덱싱, 그리고 MLOps 파이프라인을 유기적으로 엮어내는 실용주의 엔지니어링을 실천합니다.
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-space-md bg-surface-container/60 p-space-md rounded-lg mt-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center font-bold">
+              AI
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Service-Driven Mindset</span>
+<span class="font-body-sm text-body-sm text-text-muted">Focusing on Latency, Cost & User Trust</span>
+</div>
+</div>
+</div>
+<!-- Right 3 Pillars Bento Grid -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-elevated rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-bright transition-colors md:col-span-2">
+<div class="flex items-start gap-space-md">
+<div class="p-space-sm bg-primary-container/30 text-primary rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">Pillar 01</span>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Problem Solver</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                  추상적인 비즈니스 과제를 구체적인 AI 솔루션 아키텍처로 분해합니다. 도메인 맞춤형 검색 증강 생성(RAG)부터 Agentic Workflows까지 적재적소의 기술 조합을 설계합니다.
+                </p>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Workflow Mapping</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-text-secondary font-label-sm text-label-sm">Cost Optimization</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-text-secondary font-label-sm text-label-sm">ROI Analysis</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-elevated rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-bright transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-secondary-container/30 text-secondary rounded-lg w-fit">
+<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wide">Pillar 02</span>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Production-Ready</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                대규모 트래픽을 고려한 모델 양자화(Quantization), 캐싱 레이어, Triton/FastAPI 기반 무중단 비동기 서빙 파이프라인을 구축합니다.
+              </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 99.9% High Availability
+            </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-elevated rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-bright transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-tertiary-container/30 text-tertiary rounded-lg w-fit">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wide">Pillar 03</span>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Fast PoC & Iteration</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                가장 빠른 프로토타입으로 프로덕트 시장 적합성을 확인하고, 정량적 LLM Eval(Ragas, TruLens) 지표에 기반해 기민하게 고도화합니다.
+              </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> Continuous Benchmark
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS SECTION -->
+<section class="w-full bg-surface py-space-3xl px-6 lg:px-12 relative" id="skills">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col items-start gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Skills & Expertise</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold">
+            엔드투엔드 AI 서비스 스택
+          </h2>
+<p class="font-body-md text-body-md text-text-secondary">
+            단순 점수 평가를 배제하고 실무에서 즉시 프로덕션 환경에 투입 가능한 핵심 역량군을 분류했습니다.
+          </p>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
+<span>Verified Production Toolchains</span>
+</div>
+</div>
+<!-- Categories 4-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Category 1: AI & Machine Learning -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">model_training</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Core AI</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">AI & ML Foundations</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">대규모 언어 모델 튜닝 및 RAG 오케스트레이션</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">LLMs (GPT-4, Claude)</span>
+<span class="text-tertiary font-label-sm text-label-sm">Advanced</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">RAG Architecture</span>
+<span class="text-tertiary font-label-sm text-label-sm">Enterprise</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">LangChain / LlamaIndex</span>
+<span class="text-tertiary font-label-sm text-label-sm">Framework</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">PyTorch & Hugging Face</span>
+<span class="text-tertiary font-label-sm text-label-sm">Fine-tuning</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-text-muted font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Context Management & Evals
+          </div>
+</div>
+<!-- Category 2: Backend & Serving -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Serving</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Backend & Serving</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">고성능 서빙 프레임워크 및 벡터 저장소</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Python & FastAPI</span>
+<span class="text-secondary font-label-sm text-label-sm">Async IO</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Vector DB (Milvus, Pinecone)</span>
+<span class="text-secondary font-label-sm text-label-sm">Hybrid</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Ray Serve / Triton</span>
+<span class="text-secondary font-label-sm text-label-sm">Distributed</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">PostgreSQL & Redis</span>
+<span class="text-secondary font-label-sm text-label-sm">Caching</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-text-muted font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Sub-second response SLA
+          </div>
+</div>
+<!-- Category 3: MLOps & Cloud -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">Ops & Cloud</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">MLOps & Cloud</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">확장 가능한 모델 서빙 인프라 자동화</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">AWS & GCP</span>
+<span class="text-primary font-label-sm text-label-sm">Multi-Cloud</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Docker & Kubernetes</span>
+<span class="text-primary font-label-sm text-label-sm">Container</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">MLflow / W&B</span>
+<span class="text-primary font-label-sm text-label-sm">Tracking</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">GitHub Actions CI/CD</span>
+<span class="text-primary font-label-sm text-label-sm">Automated</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-text-muted font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> Observability & Rollback
+          </div>
+</div>
+<!-- Category 4: Collaboration & Workflow -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-elevated text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary uppercase font-bold">Collab</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Workflow & Tools</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">제품 팀과의 매끄러운 소통과 기술 문서화</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Git & GitHub Flow</span>
+<span class="text-text-muted font-label-sm text-label-sm">Standard</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Jira & Confluence</span>
+<span class="text-text-muted font-label-sm text-label-sm">Agile</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Notion Docs</span>
+<span class="text-text-muted font-label-sm text-label-sm">Architecture</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium">Figma Prototype</span>
+<span class="text-text-muted font-label-sm text-label-sm">UX Alignment</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-text-muted font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">forum</span> Cross-functional Team
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS SECTION (카드뉴스 형태 UI) -->
+<section class="w-full bg-surface-container-low py-space-3xl px-6 lg:px-12 relative" id="projects">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">folder_special</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Featured Projects</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold">
+          프로덕션 검증 카드뉴스 프로젝트
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl">
+          단순한 토이 프로젝트가 아닌, 비즈니스 문제 정의부터 아키텍처 수립 및 지표 개선까지 입체적 스토리로 정리한 대표 작업물입니다.
+        </p>
+</div>
+<!-- 3 Card-News Style Project Units -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-xl items-stretch">
+<!-- PROJECT 1 CARD NEWS -->
+<article class="bg-surface-card rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+<!-- Card News Header Slide Bar -->
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="High-tech enterprise neural search network visualization with glowing nodes, vector space embeddings, deep navy background and electric blue fiber optic lines, sharp cinematic lighting, modern software architecture banner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlltKR8_uwodLytaFSH5KMky8Rq5Q7n66UIHBPJcH1-IVTJ7CrVr36jU0ffSiq3ENn3Y79Ar5LeVaQpn2essGb0WUq1OurCcb_pOPGOmGkeDiRoKuQzpqZHXegeswMsV7vyzVz12jgk09DROEUqOHbszL-T4VI1d-aggmWK_UnECil_DrwRCTZdvqwK2pRhUhBO6GL4Kq05S2WgCUS8pHg9vxU2NQc5YliiyGYuj0')"></div>
+<!-- Glass Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/60 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-md">
+                CARD 01 / RAG
+              </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-card/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm">
+                Production
+              </span>
+</div>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="font-label-sm text-label-sm text-text-muted">Enterprise Knowledge Assistant</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">지능형 사내 지식 검색 RAG 서비스</h3>
+</div>
+</div>
+<!-- Card News Narrative Sections -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Problem Definition -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> 문제 정의 (Problem)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                방대한 20만+ 비정형 사내 위키 및 기술 문서에서 사내 직원의 정보 탐색 시간이 일 평균 40분 이상 소요되고 오답(환각) 리스크 존재.
+              </p>
+</div>
+<!-- AI Solution Architecture -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">settings_suggest</span> 솔루션 구현 (Solution)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Hybrid Search(BM25 + Dense Vector), Re-ranker(Cohere) 계층화 도입 및 메타데이터 필터링을 결합한 다단계 RAG 파이프라인 구축.
+              </p>
+</div>
+<!-- Key Quantitative Results (Card-News Metric Callout) -->
+<div class="grid grid-cols-2 gap-space-xs py-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-tertiary font-extrabold">+68%</span>
+<span class="font-label-sm text-label-sm text-text-muted">응답 정확도(Hit@3)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">1.4s</span>
+<span class="font-label-sm text-label-sm text-text-muted">평균 E2E 검색 지연</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">LangChain</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">Milvus</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">FastAPI</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">React</span>
+</div>
+</div>
+<!-- Card News Footer Action Buttons -->
+<div class="p-space-lg pt-0 flex items-center gap-space-sm">
+<button class="flex-1 py-space-xs px-space-sm rounded-lg bg-surface-elevated hover:bg-surface-bright text-text-primary font-label-sm text-label-sm text-center transition-colors" onclick="alert('아키텍처 다이어그램 모달: Hybrid Retriever(BM25+Dense) -> Cross-Encoder Rerank -> Generator 로 구성된 아키텍처입니다.');">
+              상세 아키텍처 보기
+            </button>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="GitHub Codebase">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="Live Demo">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 2 CARD NEWS -->
+<article class="bg-surface-card rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+<!-- Card News Header Slide Bar -->
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Multimodal document workflow visualization showing digital PDF charts, computer vision scanning laser beams, automated executive summary dashboards, sleek dark neon interface aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_nFSAAlE7RsBeWHsRSg1-gyeuSBGeNh14l28Q7I_h6b65FEW2HHa-XjdjHLxdqKEc6-Qqw7gBTo3M094iD9mf29Lj5__3w3-rV3v3OP1KavfWGQYEIQZW7jT2MGZi20oY4x3VZGVo9j1WXnLBuvctawoXWlSUn0C-VJKkyQ40-qZlvntIO0tbEqSMSXaeA6aTwAETAAn7iqdFfeBb9Wq1e2sQWzSCEHCFAio5Sq4')"></div>
+<!-- Glass Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/60 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-md">
+                CARD 02 / Agentic AI
+              </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-card/80 backdrop-blur-md text-secondary font-label-sm text-label-sm">
+                Deployed
+              </span>
+</div>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="font-label-sm text-label-sm text-text-muted">Automated Document Intelligence</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">멀티모달 Agent 문서 분석 솔루션</h3>
+</div>
+</div>
+<!-- Card News Narrative Sections -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Problem Definition -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> 문제 정의 (Problem)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                표, 도표, 복합 차트가 포함된 재무 보고서 및 기술 도면을 기존 OCR로 처리 시 데이터 왜곡 및 오판독 문제 빈번.
+              </p>
+</div>
+<!-- AI Solution Architecture -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">settings_suggest</span> 솔루션 구현 (Solution)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                비전 LLM 기반 시각 파싱 + Celery 비동기 큐 분산 워크플로우를 통해 구조화된 Markdown 및 실시간 인사이트 보고서 자동 생성.
+              </p>
+</div>
+<!-- Key Quantitative Results -->
+<div class="grid grid-cols-2 gap-space-xs py-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-extrabold">-85%</span>
+<span class="font-label-sm text-label-sm text-text-muted">보고서 작성 수작업 시간</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">98.2%</span>
+<span class="font-label-sm text-label-sm text-text-muted">테이블 구조 보존 정확도</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">GPT-4o</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">PyTorch</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">Celery</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">Docker</span>
+</div>
+</div>
+<!-- Card News Footer Action Buttons -->
+<div class="p-space-lg pt-0 flex items-center gap-space-sm">
+<button class="flex-1 py-space-xs px-space-sm rounded-lg bg-surface-elevated hover:bg-surface-bright text-text-primary font-label-sm text-label-sm text-center transition-colors" onclick="alert('멀티모달 Agent 파이프라인: PDF 레이아웃 분석기 -> Vision LLM 차트 디코더 -> 요약 에이전트 체인으로 자동 연결됩니다.');">
+              상세 아키텍처 보기
+            </button>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="GitHub Codebase">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="Live Demo">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 3 CARD NEWS -->
+<article class="bg-surface-card rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+<!-- Card News Header Slide Bar -->
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Real-time conversational AI audio visualizer wave with sentiment analysis glowing graph lines, purple and teal modern cybersecurity dashboard display with interactive UI preview" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5d46paLnqulGjmjb2TjutQuayVAxtXZy7durSlyWNDxWL8X-a8n1UizIhAU3_RyWGyuH-hzUaRRzByw03pe04rvympQlPWVlFLzwfJdDzxOklQ9UYm-lk_hrurjBrYaH8sfHc9c9V5jveQbWYoZ6F_WYl46JOpGrHyDt9GtMxUkelDEKoUDqiJ_V1Hk6uVC3S_FdH4pvEhGoLUwPk-UI_aF1581dFIire839rEyM')"></div>
+<!-- Glass Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/60 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold shadow-md">
+                CARD 03 / Realtime LLM
+              </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-card/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm">
+                Production
+              </span>
+</div>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="font-label-sm text-label-sm text-text-muted">Conversational AI Engine</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">실시간 감정 분석 대화형 AI 챗봇</h3>
+</div>
+</div>
+<!-- Card News Narrative Sections -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Problem Definition -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> 문제 정의 (Problem)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                고객 지원 상담 채널의 피크 타임 대기 시간 증가 및 부정 감정 고객에 대한 늦은 대응으로 인한 이탈 발생.
+              </p>
+</div>
+<!-- AI Solution Architecture -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">settings_suggest</span> 솔루션 구현 (Solution)
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                WebSocket 기반 실시간 감정 분류기 탑재 + Guardrails AI를 이용한 탈옥(Jailbreak) 및 편향 방지 실시간 필터 적용.
+              </p>
+</div>
+<!-- Key Quantitative Results -->
+<div class="grid grid-cols-2 gap-space-xs py-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-tertiary font-extrabold">< 350ms</span>
+<span class="font-label-sm text-label-sm text-text-muted">TTFT (첫 토큰 생성 지연)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-elevated text-center flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-extrabold">94.6%</span>
+<span class="font-label-sm text-label-sm text-text-muted">CSAT 긍정 응대 평가</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">OpenAI API</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">Guardrails AI</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">Redis</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-text-secondary font-label-sm text-label-sm">WebSocket</span>
+</div>
+</div>
+<!-- Card News Footer Action Buttons -->
+<div class="p-space-lg pt-0 flex items-center gap-space-sm">
+<button class="flex-1 py-space-xs px-space-sm rounded-lg bg-surface-elevated hover:bg-surface-bright text-text-primary font-label-sm text-label-sm text-center transition-colors" onclick="alert('가드레일 & 감정분석 흐름: 사용자 입력 -> 0.05초 내 감정 감지 -> 안전 필터 -> 적응형 어조 프롬프트 주입 -> 스트리밍 응답');">
+              상세 아키텍처 보기
+            </button>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="GitHub Codebase">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+<a class="p-space-xs rounded-lg bg-surface-container-high hover:text-primary text-text-secondary transition-colors" href="#" title="Live Demo">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="w-full bg-surface py-space-3xl px-6 lg:px-12 relative" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center gap-space-xs max-w-2xl mx-auto">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">connect_without_contact</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Get In Touch</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold">
+          새로운 기회와 AI 프로덕트 협업에 대해 열려 있습니다
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          혁신적인 AI 서비스 기획, 프로덕션 서빙 파이프라인 구축 또는 채용 관련 논의가 필요하시다면 언제든 편하게 연락해 주세요.
+        </p>
+</div>
+<!-- Contact Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left: Verified Contact Details & PDF Download Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Direct Copy Email Card -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">Direct Contact</span>
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">mail</span>
+<span class="font-body-md text-body-md text-text-primary font-medium truncate" id="emailText">ai.engineer.service@domain.com</span>
+</div>
+<button class="shrink-0 px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors flex items-center gap-1" id="copyBtn" onclick="copyEmailToClipboard()">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copyBtnLabel">복사</span>
+</button>
+</div>
+<!-- Social Links Matrix -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="p-space-sm rounded-lg bg-surface-elevated hover:bg-surface-bright transition-colors flex items-center gap-space-xs text-text-primary" href="#">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">GitHub</span>
+<span class="font-label-sm text-label-sm text-text-muted">@ai-engineer</span>
+</div>
+</a>
+<a class="p-space-sm rounded-lg bg-surface-elevated hover:bg-surface-bright transition-colors flex items-center gap-space-xs text-text-primary" href="#">
+<span class="material-symbols-outlined text-secondary text-[20px]">share</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">LinkedIn</span>
+<span class="font-label-sm text-label-sm text-text-muted">in/ai-service</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Portfolio PDF Download Card -->
+<div class="bg-surface-elevated rounded-xl p-space-lg shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">포트폴리오 요약본 PDF</span>
+<span class="font-body-sm text-body-sm text-text-muted">오프라인 면접용 핵심 정리본 (2.4MB)</span>
+</div>
+</div>
+<a class="p-space-sm rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-text-primary transition-colors" href="#" title="Download Resume">
+<span class="material-symbols-outlined text-[22px]">download</span>
+</a>
+</div>
+<!-- Location Indicator -->
+<div class="p-space-md rounded-xl bg-surface-card flex items-center gap-space-sm text-text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">location_on</span>
+<span>대한민국 서울특별시 (Seoul, South Korea) · Remote 협업 가능</span>
+</div>
+</div>
+<!-- Right: Inquiry Submission Form UI -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl p-space-xl shadow-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">메시지 보내기</h3>
+<p class="font-body-sm text-body-sm text-text-muted">보내주신 제안과 피드백은 24시간 이내에 확인 후 회신드립니다.</p>
+</div>
+<form class="flex flex-col gap-space-md" id="contactForm" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Name Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-text-secondary" for="senderName">성함 / 담당자명 *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-text-primary font-body-sm text-body-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="senderName" placeholder="홍길동" required="" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-text-secondary" for="senderEmail">회신받을 이메일 *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-text-primary font-body-sm text-body-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="senderEmail" placeholder="name@company.com" required="" type="email"/>
+</div>
+</div>
+<!-- Subject Category Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-text-secondary" for="subjectCategory">문의 유형</label>
+<select class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-text-primary font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="subjectCategory">
+<option value="recruitment">채용 기회 / 포지션 제안</option>
+<option value="consulting">AI 프로덕트 아키텍처 컨설팅</option>
+<option value="collaboration">사이드 프로젝트 / 연구 협업</option>
+<option value="general">기타 일반 문의</option>
+</select>
+</div>
+<!-- Message Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-text-secondary" for="messageBody">제안 내용 *</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-text-primary font-body-sm text-body-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary shadow-sm resize-none" id="messageBody" placeholder="프로젝트 내용, 요구 기술 스택, 일정 및 상세 제안 사항을 입력해주세요." required="" rows="5"></textarea>
+</div>
+<!-- Submit Button & Feedback Status -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary hidden" id="formFeedback">메시지가 성공적으로 전송되었습니다! 확인 후 연락드리겠습니다.</span>
+<button class="ml-auto inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-inverse-primary transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)]" type="submit">
+<span>문의 전송하기</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for Copy & Contact Submissions -->
+<script>
+    function copyEmailToClipboard() {
+      const email = document.getElementById('emailText').innerText.trim();
+      navigator.clipboard.writeText(email).then(() => {
+        const label = document.getElementById('copyBtnLabel');
+        const originalText = label.innerText;
+        label.innerText = '복사됨!';
+        setTimeout(() => {
+          label.innerText = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('formFeedback');
+      feedback.classList.remove('hidden');
+      document.getElementById('contactForm').reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-2xl"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm"><span class="material-symbols-outlined text-[20px]">terminal</span><span>AI Service Engineering</span></div><p class="font-body-sm text-body-sm text-text-muted">© 2024 AI Service Engineer. Built with precision and scalable inference.</p></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">code</span><span>GitHub</span></a><a class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span><span>LinkedIn</span></a><a class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span><span>Email</span></a></div></div></footer></body></html>

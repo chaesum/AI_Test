@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Noto Sans KR", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-surface: #0b1326;
+  --color-surface-low: #131b2e;
+  --color-surface-card: #111827;
+  --color-surface-elevated: #1e293b;
+  --color-surface-bright: #31394d;
+  --color-surface-lowest: #060e20;
+  --color-surface-high: #222a3d;
+
+  --color-primary: #b4c5ff;
+  --color-primary-container: #2563eb;
+  --color-on-primary-container: #eeefff;
+  --color-secondary: #d0bcff;
+  --color-secondary-container: #571bc1;
+  --color-tertiary: #4cd7f6;
+  --color-tertiary-container: #00788c;
+  --color-error: #ffb4ab;
+
+  --color-on-surface: #dae2fd;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+    overscroll-behavior: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
